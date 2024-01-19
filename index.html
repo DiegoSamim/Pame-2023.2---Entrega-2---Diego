@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitFluxo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div id="Header-Titulo">
             <h1>GitFluxo</h1>
-            <img src="components/github.png" alt="">
+            <a href="#"><img src="components/github.png" alt=""></a>
+           
         </div>
         <div id="Header-Mensagem">
             <h1>Let´s build from here</h1>
@@ -23,31 +24,43 @@
         <div id="Card-Login">
             <div class="Input">
                 <label>Username or email address</label>
-                <input placeholder="username or email address" type="text">
+                <input id="usuario" placeholder="username or email address" type="text">
             </div>
             <div class="Input">
-                <label>Password</label>
-                <input placeholder="password" type="text">
+                <div id="Label-Senha">
+                    <label>Password</label>
+                    <a href="#"><label>Forgot Password ?</label></a>
+                </div>
+                <input id="senha" placeholder="password" type="password">
             </div>
-            <div class="Input" id="Switch">
-                <input type="checkbox">
+            <div id="Switch">
+                <input id="toggle" class="toggle" type="checkbox">
+                <label id="label" for="toggle"></label>
                 <h3>remember me</h3>
             </div>
             <div id="Redirecionamento">
-                <button class="Botao"> Sign In </button>
-                <h2>Or</h2>
-                <button class="Botao"> Sign In </button>
-                <button class="Botao"> Sign In </button>
+                <button onclick="enviarFormulario()" class="Botao"> Sign In </button>
+                <h2 id="OU">Or</h2>
+                <div class="Botao-Continue">
+                    <img src="components/google.png" alt="">
+                    <a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwic0L7L1-mDAxXfD7kGHR8cDj4QPAgJ"><h2>Continue with Google</h2></a>
+                </div>
+                <div class="Botao-Continue">
+                    <img src="components/facebook.png" alt="">
+                    <a href="https://www.facebook.com/?locale=pt_BR"><h2>Continue with Facebook</h2></a>
+                </div>
             </div>
 
         </div>
     </main>
     <footer>
-        <a href=""><p>Terms</p></a>
-        <a href=""><p>Privacy</p></a>
-        <a href=""><p>Docs</p></a>
-        <a href=""><p>Contact GitFluxo Support</p></a>
-        <a href=""><p>Do not share my persoal information</p></a>
+        <a href="#"><p>Terms</p></a>
+        <a href="#"><p>Privacy</p></a>
+        <a href="#"><p>Docs</p></a>
+        <a href="#"><p>Contact GitFluxo Support</p></a>
+        <a href="#"><p>Do not share my persoal information</p></a>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
