@@ -1,0 +1,77 @@
+/* Estilos globais */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.989);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(36, 38, 39, 0.832), rgb(0, 0, 0)), url(../components/Fluxo\ Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+/* ---------------------------------------- Header ---------------------------------------- */
+
+header{
+    /* Estilos do cabeçalho */
+    box-sizing: border-box;
+    width: 100vw;
+    height: 10vh;
+    background-color: #2c2c2c;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 12px;
+}
+
+#Header-Titulo{
+    /* Estilos do título do cabeçalho */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 14%;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+#Header-Titulo img {
+    /* Estilos para a imagem no título do cabeçalho */
+    width: 35px;
+    height: auto;
+    margin: 0px 10px;
+    filter: invert(100%);
+    object-fit: contain;
+}
+
+#Header-Mensagem{
+    /* Estilos da mensagem no cabeçalho */
+    display: flex;
+    align-items: center;
+    font-family: Arial;
+    padding: 5px;
+}
+
+/* ---------------------------------------- Footer ---------------------------------------- */
+
+footer{
+    /* Estilos para o rodapé */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer a{
+    /* Estilos para os links no rodapé */
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+

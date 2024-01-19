@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags para a configuração do documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitFluxo</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Links para folhas de estilo externas e ícone da página -->
+    <link rel="stylesheet" href="styles/Header-Footer.css">
+    <link rel="stylesheet" href="styles/Main.css">
+    <link rel="stylesheet" href="styles/Media_Queries.css">
+    <link rel="shortcut icon" type="imagex/png" href="components/GitFluxo.ico">
 </head>
 <body>
+    <!-- Header da página -->
     <header>
         <div id="Header-Titulo">
+            <!-- Título e logotipo da GitFluxo -->
             <h1>GitFluxo</h1>
-            <a href="#"><img src="components/github.png" alt=""></a>
-           
+            <a href="#"><img src="components/github.png" alt="Imagem Logo da GitFluxo"></a>
         </div>
         <div id="Header-Mensagem">
-            <h1>Let´s build from here</h1>
+            <!-- Mensagem do Header -->
+            <h1>Let's build from here</h1>
         </div>
     </header>
+
+    <!-- Seção principal da página -->
     <main>
         <div id="Main-Titulo">
+            <!-- Título principal da seção -->
             <h1>Sign in to GitFluxo</h1>
         </div>
         <div id="Card-Login">
+            <!-- Formulário de login -->
             <div class="Input">
                 <label>Username or email address</label>
                 <input id="usuario" placeholder="username or email address" type="text">
             </div>
             <div class="Input">
+                <!-- Campo de senha e link para recuperação -->
                 <div id="Label-Senha">
                     <label>Password</label>
                     <a href="#"><label>Forgot Password ?</label></a>
@@ -34,32 +47,40 @@
                 <input id="senha" placeholder="password" type="password">
             </div>
             <div id="Switch">
+                <!-- Controle de alternância para "lembrar-me" -->
                 <input id="toggle" class="toggle" type="checkbox">
                 <label id="label" for="toggle"></label>
                 <h3>remember me</h3>
             </div>
             <div id="Redirecionamento">
+                <!-- Botão de login, mensagem "OU" e botões de autenticação social -->
                 <button onclick="enviarFormulario()" class="Botao"> Sign In </button>
                 <h2 id="OU">Or</h2>
-                <div class="Botao-Continue">
-                    <img src="components/google.png" alt="">
-                    <a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwic0L7L1-mDAxXfD7kGHR8cDj4QPAgJ"><h2>Continue with Google</h2></a>
-                </div>
-                <div class="Botao-Continue">
-                    <img src="components/facebook.png" alt="">
-                    <a href="https://www.facebook.com/?locale=pt_BR"><h2>Continue with Facebook</h2></a>
+                <div id="Container-Continue">
+                    <!-- Botões de autenticação social -->
+                    <div class="Botao-Continue">
+                        <img src="components/google.png" alt="Imagem Logo do google">
+                        <a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwic0L7L1-mDAxXfD7kGHR8cDj4QPAgJ"><h2>Continue with Google</h2></a>
+                    </div>
+                    <div class="Botao-Continue">
+                        <img src="components/facebook.png" alt="Imagem Logo do Facebook">
+                        <a href="https://www.facebook.com/?locale=pt_BR"><h2>Continue with Facebook</h2></a>
+                    </div>
                 </div>
             </div>
-
         </div>
     </main>
+
+    <!-- Footer da página -->
     <footer>
+        <!-- Links no Footer para Termos, Privacidade, Documentação e Suporte -->
         <a href="#"><p>Terms</p></a>
         <a href="#"><p>Privacy</p></a>
         <a href="#"><p>Docs</p></a>
         <a href="#"><p>Contact GitFluxo Support</p></a>
-        <a href="#"><p>Do not share my persoal information</p></a>
+        <a href="#"><p>Do not share my personal information</p></a>
     </footer>
+
 
     <script src="script.js"></script>
 </body>

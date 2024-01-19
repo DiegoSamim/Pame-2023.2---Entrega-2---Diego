@@ -5,28 +5,35 @@ GITFLUXO
 
 Criar uma tela de um site ficticio com base na imagem fornecida:
 
-![Alt text](components/image.png)
+![Alt text](components/image-1.png)
 
 - Quando for clicado enviar, um pop up (alerta) deve aparecer com as informações enviadas
 confirmando o login
 
 ## A Fazer
-- [] Documentação de código e ReadMe
+- [x] Documentação de código e ReadMe
 
 
 ### HTML
-- [] Titulo e Icone da Página
-- [] Acrescentar descrição
-- [] Ajeitar os links de redirecionamento
+- [x] Titulo e Icone da Página
+- [x] Acrescentar descrição
+- [x] Ajeitar os links de redirecionamento
 
 ### CSS
-- [] Ajeitar o background e inserir o degrade 
-- [] Inserir as imagens 
-- [] Pesquisar e adicionar as cores e font 
-- [] Terminar o Card-Formulario 
-- [] Ajustes Finos
+- [x] Ajeitar o background e inserir o degrade 
+- [x] Inserir as imagens 
+- [x] Pesquisar e adicionar as cores e font 
+- [x] Terminar o Card-Formulario 
+- [x] Ajustes Finos
 
 ### JavaScript
-- Botao de Envio de dados
-- Window alert com os inputs
-- Card Pop Up com os Inputs (Bonus/Opcional)
+- [x] Botao de Envio de dados
+- [x] Window alert com os inputs
+- [x] Card Pop Up com os Inputs (Bonus/Opcional)
+
+
+## Conclusão:
+
+![Alt text](components/image.png)
+
+Do projeto, há pequenas diferenças em cor e tamanho do card de formulário. Além disso, em questão de responsividade, embora talvez falhe em telas bem pequena, funciona corretamente. 

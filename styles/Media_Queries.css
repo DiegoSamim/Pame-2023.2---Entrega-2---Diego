@@ -1,0 +1,91 @@
+/* ---------------------------------------- Media queries para telas menores (Horizontal) ---------------------------------------- */
+
+@media screen and (max-width: 950px) {
+    /* Estilos para telas com largura máxima de 950px */
+
+    header {
+        flex-direction: column; /* Colocar os elementos do cabeçalho em coluna em telas menores */
+        align-items: center;
+    }
+
+    #Header-Titulo{
+        justify-content: center; /*Centraliza a div Header-Titulo*/
+    }
+
+    header h1{
+        font-size: 15px;
+    }
+
+    #Header-Titulo {
+        width: 100%; /* Ajustar a largura do título do cabeçalho para ocupar a largura total */
+    }
+
+    #Card-Login {
+        width: 75%; /* Reduzir a largura do Card de Login em telas menores */
+    }
+
+    .Input input {
+        font-size: 12px; /* Reduzir o tamanho da fonte nos campos de entrada */
+    }
+}
+
+/* ---------------------------------------- Media queries para telas menores (Vertical) ---------------------------------------- */
+
+@media screen and (max-height: 650px) {
+    /* Estilos para telas com altura máxima de 650px */
+
+    .Input input {
+        font-size: 12px; /* Reduzir o tamanho da fonte nos campos de entrada */
+    }
+
+    #Card-Login {
+        width: 50%; /* Reduzir a largura do Card de Login em telas menores */
+    }
+
+    #OU{
+        margin-top: 10px;
+    }
+
+    #Container-Continue{
+        margin-top: 10px;
+        flex-direction: row; /* Alterna para o modo row, colocando os botões de continue alinhados horizontalmente*/
+    }
+
+    .Botao-Continue{
+        width: 40%;
+    }
+
+    .Botao-Continue h2{
+        font-size: 10px;
+    }
+}
+
+/* ---------------------------------------- Media queries para o formato Celular Horizontal (landscape) ---------------------------------------- */
+
+@media screen and (max-height: 550px) and (orientation: landscape) {
+    /* Estilos para telas com altura máxima de 550px e orientação horizontal (landscape) */
+
+    header {
+        flex-direction: row;
+    }
+
+    #Header-Titulo {
+        width: auto; 
+    }
+
+    body{
+        height: 100vw;
+    }
+
+    #Container-Continue{
+        flex-direction: column;
+    }
+
+    .Botao-Continue{
+        width: 100%;
+    }
+
+    #Card-Login {
+        width: 70%; /* Reduzir a largura do Card de Login em telas menores */
+    }
+}
